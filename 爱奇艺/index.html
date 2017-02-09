@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>爱奇艺</title>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/aiqiyi.css"/>
+		<script src="js/swiper-3.4.0.min.js"></script>
+		<link rel="stylesheet" href="css/swiper-3.4.0.min.css" />
+		<script src="../HB/zoukao/js/iscroll.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="wrap">
+			<header>
+			<div class="head_left">
+				<img src="img/images/026_03.png"/>
+			</div>
+			<div class="head_right">
+				<img src="img/images/026_06.png"/>
+				<img src="img/images/026_08.png"/>
+				<img src="img/images/026_10.png"/>
+				<img src="img/images/026_12.png"/>
+			</div>
+		</header>
+		<section id="wrapper">
+			<div class="wrapper">
+				<div class="search">
+				<div class="search_type">
+					<div><input type="text"  placeholder="小猪佩琪"/></div>
+					<span><img src="img/images/026_20.png"/></span>
+				</div>
+			</div>
+			<nav>
+				<div class="nav">
+					<div class="swiper-container">
+				        <div class="swiper-wrapper">
+				            <div class="swiper-slide">推荐</div>
+				            <div class="swiper-slide">欢脱定律</div>
+				            <div class="swiper-slide">热点</div>
+				            <div class="swiper-slide">电视剧</div>
+				            <div class="swiper-slide">电影</div>
+				            <div class="swiper-slide">综艺</div>
+				            <div class="swiper-slide">动画</div>
+				            <div class="swiper-slide">北京</div>
+				            <div class="swiper-slide">原创</div>
+				            <div class="swiper-slide">喜剧</div>
+				        </div>
+		    		</div>
+		    </div>	
+		    
+				<div class="one">
+					<img src="img/images/026_23.png"/>
+				</div>
+			</nav>
+			<div class="main">
+				<div class="swiper-container">
+        			<div class="swiper-wrapper">
+		            <div class="swiper-slide"><img src="img/images/026_26.png"/></div>
+		            <div class="swiper-slide"><img src="img/images/026_26.png"/></div>
+		            <div class="swiper-slide"><img src="img/images/026_26.png"/></div>
+		            <div class="swiper-slide"><img src="img/images/026_26.png"/></div>
+		            <div class="swiper-slide"><img src="img/images/026_26.png"/></div>
+		        </div>
+		    </div>
+			</div>
+			<div class="main_2">
+				<div class="main_2_main">
+					<img src="img/images/026_29.png"/>
+					<h1>今日资讯</h1>
+				</div>
+			</div>
+			<div class="main_3">
+				<div class="main_3_main">
+					<img src="img/images/026_33.png"/><a href="">中国船员讲述被囚禁经历：索马里是人间地狱</a><br />
+					<img src="img/images/026_33.png"/><a href="">中央气象台发布霾橙色预警 京津冀有重雾霾</a>
+					
+				</div>
+			</div>
+			<div class="main_4">				
+					<dl>
+						<dt><img src="img/images/026_38.png"/></dt>
+						<dd><span>游客用无花果砸醒熊猫</span>
+						    <p>宝宝黑眼圈都那么严重</p>
+						</dd>
+					</dl>
+					<dl>
+						<dt><img src="img/images/026_40.png"/></dt>
+						<dd><span>男子出门买菜家被拆平</span>
+						    <p>家中物品被埋</p>
+						</dd>
+					</dl>				
+			</div>
+			<div class="main_4">				
+					<dl>
+						<dt><img src="img/images/026_38.png"/></dt>
+						<dd><span>游客用无花果砸醒熊猫</span>
+						    <p>宝宝黑眼圈都那么严重</p>
+						</dd>
+					</dl>
+					<dl>
+						<dt><img src="img/images/026_40.png"/></dt>
+						<dd><span>男子出门买菜家被拆平</span>
+						    <p>家中物品被埋</p>
+						</dd>
+					</dl>				
+			</div>
+			</div>
+			
+		</section>
+		<footer>
+			<dl>
+				<dt><img src="img/images/026_45.png"/></dt>
+				<dd style="color: #01c400;">视频</dd>
+			</dl>
+			<dl>
+				<dt><img src="img/images/026_47.png"/></dt>
+				<dd>乐活</dd>
+			</dl>
+			<dl>
+				<dt><img src="img/images/026_49.png"/></dt>
+				<dd>会员VIP</dd>
+			</dl>
+			<dl>
+				<dt><img src="img/images/026_51.png"/></dt>
+				<dd>我的</dd>
+			</dl>
+			<dl>
+				<dt><img src="img/images/026_53.png"/></dt>
+				<dd>泡泡</dd>
+			</dl>
+		</footer>
+		</div>
+		
+	</body>
+	<script>
+    var swiper = new Swiper('nav .swiper-container', {
+        pagination: '.swiper-pagination',
+        slidesPerView: 5,
+        paginationClickable: true,
+        spaceBetween:0
+    });
+    
+    var swiper = new Swiper('.main .swiper-container', {
+        paginationClickable: true,
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: 1000,
+        loop:true,
+        autoplayDisableOnInteraction: false
+    });
+    var myscroll=new IScroll("#wrapper",{
+					scrollbars:true,
+					disableMouse:true,
+					disablePointer:tr ue,
+					scrollbars:'custom'
+				});
+
+    </script>
+</html>
