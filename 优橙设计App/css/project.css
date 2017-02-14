@@ -1,37 +1,21 @@
 @import url(reset.css);
-html,
+.warp,
 body,
-.warp {
+html {
   width: 100%;
   height: 100%;
-  background: none;
-  overflow: hidden;
-  box-sizing: border-box;
+  background: 0;
 }
 .warp {
   display: -webkit-box;
   -webkit-box-orient: vertical;
 }
 .warp .content {
-  width: 100%;
-  height: auto;
-  background: none;
-  -webkit-box-flex: 1;
-  display: -webkit-box;
-  -webkit-box-orient: horizontal;
-  position: relative;
-  left: -300%;
-}
-.warp .content > div {
-  width: 100%;
-  height: auto;
-  background: none;
-}
-.warp .content .one {
   display: -webkit-box;
   -webkit-box-orient: vertical;
+  -webkit-box-flex: 1;
 }
-.warp .content .one header {
+.warp .content header {
   display: -webkit-box;
   -webkit-box-orient: horizontal;
   width: 100%;
@@ -39,26 +23,26 @@ body,
   background: #f2f2f2;
   border-bottom: 1px solid #d9d9d9;
 }
-.warp .content .one header img {
+.warp .content header img {
   width: auto;
   height: 1.7rem;
   background: none;
   padding: 1.1rem;
 }
-.warp .content .one header h2 {
+.warp .content header h2 {
   font-size: 1.6rem;
   margin-left: 7.5rem;
   line-height: 4rem;
 }
-.warp .content .one section {
+.warp .content section {
   -webkit-box-flex: 1;
   background: #f2f2f2;
-  overflow: auto;
+  overflow-y: auto;
 }
-.warp .content .one section::-webkit-scrollbar {
+.warp .content section::-webkit-scrollbar {
   width: 0;
 }
-.warp .content .one section .main1 {
+.warp .content section .main1 {
   display: -webkit-box;
   -webkit-box-orient: horizontal;
   width: 100%;
@@ -66,30 +50,30 @@ body,
   background: #ffffff;
   position: relative;
 }
-.warp .content .one section .main1 dl {
+.warp .content section .main1 dl {
   margin-top: 1.5rem;
   margin-left: 1.8rem;
   text-align: center;
 }
-.warp .content .one section .main1 dl img {
+.warp .content section .main1 dl img {
   width: auto;
   height: 5.5rem;
   background: none;
 }
-.warp .content .one section .main1 dl dd {
+.warp .content section .main1 dl dd {
   font-size: 1.3rem;
 }
-.warp .content .one section .main1 .shu {
+.warp .content section .main1 .shu {
   height: 5rem;
   margin-top: 2.5rem;
   margin-left: 1.5rem;
 }
-.warp .content .one section .main1 ul {
+.warp .content section .main1 ul {
   margin-top: 2.4rem;
   margin-left: 1.5rem;
   font-size: 1.5rem;
 }
-.warp .content .one section .main1 ul li:nth-child(1) span {
+.warp .content section .main1 ul li:nth-child(1) span {
   width: 4.5rem;
   height: 1.3rem;
   background: #ff4808;
@@ -98,10 +82,10 @@ body,
   margin-left: 0.7rem;
   border-radius: 3px;
 }
-.warp .content .one section .main1 ul li:nth-child(2) {
+.warp .content section .main1 ul li:nth-child(2) {
   margin-top: 1.6rem;
 }
-.warp .content .one section .main1 .you {
+.warp .content section .main1 .you {
   position: absolute;
   right: 1.5rem;
   top: 4.5rem;
@@ -109,7 +93,7 @@ body,
   height: 1.8rem;
   background: none;
 }
-.warp .content .one section .main2 {
+.warp .content section .main2 {
   display: -webkit-box;
   -webkit-box-orient: horizontal;
   width: 100%;
@@ -118,16 +102,16 @@ body,
   margin-top: 1rem;
   line-height: 3.5rem;
 }
-.warp .content .one section .main2 h2 {
+.warp .content section .main2 h2 {
   margin-left: 13rem;
   font-size: 1.5rem;
   color: #ff7f1d;
 }
-.warp .content .one section .main2 h2 a {
+.warp .content section .main2 h2 a {
   font-size: 1.1rem;
   color: #ff7f1d;
 }
-.warp .content .one section .main3 {
+.warp .content section .main3 {
   display: -webkit-box;
   -webkit-box-orient: horizontal;
   width: 100%;
@@ -135,7 +119,7 @@ body,
   background: #ffffff;
   border-top: 1px solid #f2f2f2;
 }
-.warp .content .one section .main3 .main3_left {
+.warp .content section .main3 .main3_left {
   display: -webkit-box;
   -webkit-box-orient: horizontal;
   width: 49%;
@@ -143,58 +127,58 @@ body,
   background: #ffffff;
   border-right: 1px solid #f2f2f2;
 }
-.warp .content .one section .main3 .main3_left dl {
+.warp .content section .main3 .main3_left dl {
   display: -webkit-box;
   -webkit-box-orient: horizontal;
   margin-top: 1.5rem;
   margin-left: 1rem;
 }
-.warp .content .one section .main3 .main3_left dl img {
+.warp .content section .main3 .main3_left dl img {
   width: auto;
   height: 2.3rem;
   background: none;
   margin-top: 1rem;
 }
-.warp .content .one section .main3 .main3_left dl dd {
+.warp .content section .main3 .main3_left dl dd {
   margin-left: 1.3rem;
 }
-.warp .content .one section .main3 .main3_left dl dd h3 {
+.warp .content section .main3 .main3_left dl dd h3 {
   font-size: 1.5rem;
 }
-.warp .content .one section .main3 .main3_left dl dd a {
+.warp .content section .main3 .main3_left dl dd a {
   color: #808080;
   line-height: 3.2rem;
 }
-.warp .content .one section .main3 .main3_right {
+.warp .content section .main3 .main3_right {
   display: -webkit-box;
   -webkit-box-orient: horizontal;
   width: 50%;
   height: 7.5rem;
   background: #ffffff;
 }
-.warp .content .one section .main3 .main3_right dl {
+.warp .content section .main3 .main3_right dl {
   display: -webkit-box;
   -webkit-box-orient: horizontal;
   margin-top: 1.5rem;
   margin-left: 1rem;
 }
-.warp .content .one section .main3 .main3_right dl img {
+.warp .content section .main3 .main3_right dl img {
   width: auto;
   height: 2.3rem;
   background: none;
   margin-top: 1rem;
 }
-.warp .content .one section .main3 .main3_right dl dd {
+.warp .content section .main3 .main3_right dl dd {
   margin-left: 1.3rem;
 }
-.warp .content .one section .main3 .main3_right dl dd h3 {
+.warp .content section .main3 .main3_right dl dd h3 {
   font-size: 1.5rem;
 }
-.warp .content .one section .main3 .main3_right dl dd a {
+.warp .content section .main3 .main3_right dl dd a {
   color: #808080;
   line-height: 3.2rem;
 }
-.warp .content .one section .main4 {
+.warp .content section .main4 {
   display: -webkit-box;
   -webkit-box-orient: horizontal;
   width: 100%;
@@ -202,30 +186,30 @@ body,
   background: #ffffff;
   margin-top: 0.5rem;
 }
-.warp .content .one section .main4 dl {
+.warp .content section .main4 dl {
   display: -webkit-box;
   -webkit-box-orient: horizontal;
   -webkit-box-flex: 1;
   margin-top: 0.9rem;
   margin-left: 1.1rem;
 }
-.warp .content .one section .main4 dl img {
+.warp .content section .main4 dl img {
   width: auto;
   height: 1.7rem;
   background: none;
 }
-.warp .content .one section .main4 dl dd {
+.warp .content section .main4 dl dd {
   font-size: 1.5rem;
   margin-left: 0.8rem;
 }
-.warp .content .one section .main4 .main4_one {
+.warp .content section .main4 .main4_one {
   width: auto;
   height: 1.5rem;
   background: none;
   margin-top: 1rem;
   margin-right: 1rem;
 }
-.warp .content .one section .mian5 {
+.warp .content section .mian5 {
   display: -webkit-box;
   -webkit-box-orient: horizontal;
   width: 100%;
@@ -235,28 +219,28 @@ body,
   box-sizing: border-box;
   position: relative;
 }
-.warp .content .one section .mian5 dl {
+.warp .content section .mian5 dl {
   display: -webkit-box;
   -webkit-box-orient: horizontal;
   margin-top: 1rem;
   margin-left: 1rem;
   -webkit-box-flex: 1;
 }
-.warp .content .one section .mian5 dl img {
+.warp .content section .mian5 dl img {
   width: auto;
   height: 4rem;
   background: none;
 }
-.warp .content .one section .mian5 dl dd {
+.warp .content section .mian5 dl dd {
   margin-left: 1.5rem;
 }
-.warp .content .one section .mian5 dl dd h2 {
+.warp .content section .mian5 dl dd h2 {
   font-size: 1.3rem;
 }
-.warp .content .one section .mian5 dl dd p {
+.warp .content section .mian5 dl dd p {
   color: #9c9c9c;
 }
-.warp .content .one section .mian5 span {
+.warp .content section .mian5 span {
   position: absolute;
   top: 2.5rem;
   right: 1rem;
