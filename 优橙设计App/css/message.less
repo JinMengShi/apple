@@ -1,0 +1,66 @@
+@import url(reset.css);
+.box(@ver:horizontal) {
+    display: -webkit-box;
+    -webkit-box-orient: @ver;
+}
+.full(@w, @h, @bg) {
+    width: @w;
+    height: @h;
+    background: @bg;
+}
+html {
+    font-size: 62.5%;
+}
+.wrap,
+body,
+html {
+    .full(100%,100%,#f2f2f2);
+}
+.wrap {
+    .box(vertical);
+}
+header {
+    .box;
+    .full(100%,4.2rem,#f7f7f7);
+    border-bottom: 1px solid #bfbfbf;
+    img {
+        .full(1rem,1.8rem,none);
+        margin-left: 1.1rem;
+        margin-top: 1.1rem;
+    }
+    h1 {
+        -webkit-box-flex: 1;
+        line-height: 4.2rem;
+        text-align: center;
+        font-size: 1.8rem;
+    }
+}
+section{
+    .main{
+        .box;
+        .full(100%,6rem,none);
+        border-bottom: 1px solid   #bfbfbf;
+        .a{
+            img{
+               .full(4rem,4rem,none);
+                padding: 1rem 1.1rem;
+            }
+        }
+        h1{
+            font-size: 1.4rem;
+            margin-top: 1rem;
+            -webkit-box-flex: 1;
+            p{
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+        }
+        .c{
+           color: #c5c5c5; 
+           line-height:6rem;
+           font-size: 1.4rem;
+           margin-right: 0.5rem;
+        }
+    }
+}

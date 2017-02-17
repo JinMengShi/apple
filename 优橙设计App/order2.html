@@ -7,7 +7,7 @@
 		<link rel="stylesheet" type="text/css" href="css/order2.css"/>
 	</head>
 	<body>
-		<div class="wrap">
+		<div class="wrap"  ui-view='content'>
 			<header>
 				<div class="one">
 					<a href="index.html"><img src="img/订单状态/pic_28.png"/></a>
@@ -27,7 +27,7 @@
 					<img src="img/订单状态/pic_31.png"/>
 				</div>
 			</header>
-			<section>
+			<section ng-controlle="siteCtrl">
 				<div class="nav">
 				<div class="left">
 					<ul>
@@ -61,7 +61,7 @@
 					<img src="img/订单状态/pic_32.png"/>
 				</div>
 			</div>
-				<div class="main">
+				<!--<div class="main">
 				<div class="num">
 					<h3>订单编号：<span>ZD1039123003</span></h3>
 					<p>待收货</p>
@@ -74,12 +74,12 @@
 						<li>物流信息：顺丰速运    839234733</li>
 					</ul>
 				</div>
-			</div>
+			</div>-->
 			
-			<div class="main_1">
+			<div class="main_1" ng-repeat='x in names' >
 				<div class="num">
-					<h3>订单编号：<span>ZD1039123003</span></h3>
-					<p>待发货</p>
+					<h3>订单编号：<span>{{x.user_id}}</span></h3>
+					<p>{{x.pay_type}}</p>
 				</div>
 				<div class="details">
 					<ul>
@@ -90,7 +90,7 @@
 				</div>
 			</div>
 			
-			<div class="main_1">
+			<!--<div class="main_1">
 				<div class="num">
 					<h3>订单编号：<span>ZD1039123003</span></h3>
 					<p>未付款</p>
@@ -115,32 +115,32 @@
 						<li>交易时间：2016-06-01    12:14</li>
 						
 					</ul>
-				</div>
+				</div>-->
 			</div>
 			</section>
-			<footer>
-				<dl>
+			<!--<footer>
+				<dl ui-sref="index">
 					<dt><img src="img/订单状态/pic_35.png"/></dt>
 					<dd>首页</dd>
-				</dl>
+				</dl ui-sref="orang">
 				<dl>
 					<dt><img src="img/first/a_54.png"/></dt>
 					<dd>优橙协助</dd>
 				</dl>
-				<dl>
+				<dl ui-sref="">
 					<dt><img src="img/订单状态/pic_tianjia.png"/ style="height: 40px;width: 44px;"></dt>
 					<dd></dd>
 				</dl>
-				<dl>
+				<dl ui-sref="order2">
 					<dt><img src="img/订单状态/pic_26.png"/></dt>
 					<dd style="color: #ff7f1d;">订单状态</dd>
 				</dl>
-				<dl>
+				<dl ui-sref="my">
 					<dt><img src="img/订单状态/pic_06.png"/></dt>
 					<dd>我的店铺</dd>
 				</dl>
 				
-			</footer>
+			</footer>-->
 		</div>
 	</body>
 </html>

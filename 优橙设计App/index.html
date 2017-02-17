@@ -78,7 +78,7 @@
 						</div>
 					</div>
 					<div class="main3">
-						<div class="main3_left">
+						<div class="main3_left" ui-sref="binding">
 							<dl>
 								<dt><img src="img/first/a_27.png"/></dt>
 								<dd>
@@ -87,7 +87,7 @@
 								</dd>
 							</dl>
 						</div>
-						<div class="main3_right">
+						<div class="main3_right" ui-sref="pinglun">
 							<dl>
 								<dt><img src="img/first/a_29.png"/></dt>
 								<dd>
@@ -97,7 +97,7 @@
 							</dl>
 						</div>
 					</div>
-					<div class="main4" id="main4">
+					<div class="main4" ui-sref="message">
 						<dl>
 							<dt><img src="img/first/a_33.png"/></dt>
 							<dd>消息箱（39）</dd>
@@ -188,49 +188,86 @@
 </html>
 
 <script>
-		angular.module('myapp', ["ui.router"])
-			.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
-				$stateProvider
-					.state('index', {
-						views: {
-							"body": {
-								url: '/ ',
-								templateUrl: "index.html"
-							}
-						}
+	var app = angular.module('myapp', ["ui.router"])
 
-					})
-					.state('orang', {
-						views: {
-							"body": {
-								url: '/orang ',
-								templateUrl: "orang.html"
-							}
-						}
-					})
-					.state('order2', {
-						views: {
-							"body": {
-								url: '/order2 ',
-								templateUrl: "order2.html"
-							}
-						}
-					})
-					.state('my', {
-						views: {
-							"body": {
-								url: '/my ',
-								templateUrl: "my.html"
-							}
-						}
-					})
-					.state('five', {
-						views: {
-							"body.content": {
-								url: '/five ',
-								templateUrl: "five.html"
-							}
-						}
-					})
-			}])
-	</script>
+	    app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
+		$stateProvider
+			.state('index', {
+				views: {
+					"body": {
+						url: '/ ',
+						templateUrl: "index.html"
+					}
+				}
+
+			})
+			.state('orang', {
+				views: {
+					"body": {
+						url: '/orang ',
+						templateUrl: "orang.html"
+					}
+				}
+			})
+			.state('order2', {
+				views: {
+					"body.content": {
+						url: '/order2 ',
+						templateUrl: "order2.html",
+						controller:"siteCtrl"
+					}
+				}
+			})
+			.state('my', {
+				views: {
+					"body": {
+						url: '/my ',
+						templateUrl: "my.html"
+					}
+				}
+			})
+			.state('five', {
+				views: {
+					"body.content": {
+						url: '/five ',
+						templateUrl: "five.html"
+					}
+				}
+			})
+			.state('message', {
+				views: {
+					"body": {
+						url: '/message ',
+						templateUrl: "message.html"
+					}
+				}
+
+			})
+			.state('binding', {
+				views: {
+					"body": {
+						url: '/binding ',
+						templateUrl: "binding.html"
+					}
+				}
+
+			})
+
+			.state('pinglun', {
+				views: {
+					"body": {
+						url: '/pinglun ',
+						templateUrl: "pinglun.html"
+					}
+				}
+
+			})
+	}])
+	app.controller('siteCtrl', function($scope, $http) {
+		$http.get("http://localhost:3000/users/queryAll?tables=ecs_account_other_log")
+			.success(function(response) {
+				$scope.names = response;
+
+			});
+	});
+</script>

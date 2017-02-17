@@ -1,0 +1,115 @@
+@import url(reset.css);
+.box(@ver:horizontal) {
+    display: -webkit-box;
+    -webkit-box-orient: @ver;
+}
+.full(@w, @h, @bg) {
+    width: @w;
+    height: @h;
+    background: @bg;
+}
+.f(@f) {
+    float: @f;
+}
+html {
+    font-size: 62.5%;
+}
+html,
+body,
+.wrap {
+    .full(100%,100%,none);
+}
+.wrap {
+    .box(vertical);
+    .full(none,100%,url(../img/images/a1.png) no-repeat);
+     background-size:100% 100%;
+}
+
+header{
+    .box;
+    .full(100%,3.5rem,#f7f7f7);
+    border-bottom: 1px solid #ccc;
+//  padding: 0 1rem;
+    img{
+        .full(auto,1.4rem,0);
+        padding: 1rem;
+    }
+    h2{
+        -webkit-box-flex: 1;
+        text-align: center;
+        line-height: 3.5rem;
+        font-weight: bold;
+        font-size: 1.4rem;
+    }
+}
+section{
+    .catalog{
+        .full(100%,3rem,#fff);
+        line-height: 3rem;
+        padding: 0.5rem 0;
+        ul{
+            .box;
+            li{
+                -webkit-box-flex: 1;
+                text-align: center;
+                margin-right: 0.5rem;
+                img{
+                    .full(0.8rem,auto,0);
+                    margin-left: 0.5rem;
+                }
+            }
+        }
+    }
+    
+    .main{
+        .full(100%,2.5rem,#fff);
+        margin-top: 0.6rem;
+        padding: 0 1rem;
+        border-bottom: 1px solid #CCCCCC;
+        box-sizing: border-box;
+        h2{
+            line-height: 2.5rem;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+    }
+    .main1{
+        padding: 1rem;
+        box-sizing: border-box;
+        .full(100%,auto,#fff);
+        border-bottom: 1px solid #ccc;
+        p{
+            span{
+                float: right;
+                img{
+                    .full(auto,1rem,0);
+                }
+            }
+            label{
+                margin-left: 1rem;
+            }
+            b{
+                font-weight: bold;
+                line-height: 1.5rem;
+            }
+        }
+    }
+    .pinglun{
+        padding: 0 1.2rem;
+        .full(100%,2.5rem,#fff);
+        .box;
+        box-sizing:border-box;
+        h2{
+            -webkit-box-flex: 1;
+        }
+        .pinglun1{
+            .full(5rem,2rem,#fff);
+            text-align: center;
+            color: #ff7d1b;
+            border: 1px solid #FF7D1B;
+            line-height: 2rem;
+            margin-top: 0.2rem;
+            border-radius: 0.5rem;
+        }
+    }
+}
