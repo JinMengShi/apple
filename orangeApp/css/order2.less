@@ -1,0 +1,182 @@
+@import url(reset.css);
+.box(@ver:horizontal) {
+    display: -webkit-box;
+    -webkit-box-orient: @ver;
+}
+.full(@w, @h, @bg) {
+    width: @w;
+    height: @h;
+    background: @bg;
+}
+html {
+    font-size: 62.5%;
+}
+.wrap,
+body,
+html {
+    .full(100%,100%,#f2f2f2);
+}
+.wrap {
+    .box(vertical);
+}
+header {
+    .full(100%,4.5rem,#f7f7f7);
+    border: 1px solid #d9d9d9;
+    box-sizing: border-box;
+    
+    .box;
+    .one {
+        img {
+            .full(0.9rem,1.5rem,none);
+            padding: 1.5rem 1.1rem;
+        }
+    }
+    .two {
+        .box;
+        -webkit-box-flex: 1;
+        padding-top: 1rem;
+        
+        div{
+            width: auto;
+            margin: 0 auto;
+           
+        }
+        
+        .two_1 {
+            .full(8rem,2.5rem,#ff7f1d);
+            color: white;
+            line-height: 2.5rem;
+            text-align: center;
+            font-size: 1.2rem;
+            float: left;
+            border-bottom-left-radius:0.5rem ;
+            border-top-left-radius:0.5rem ;
+        }
+        .two_2 {
+            .full(8rem,2.5rem,none);
+            color: #ff7f1d;
+            line-height: 2.5rem;
+            text-align: center;
+            font-size: 1.2rem;
+            border: 1px solid #ff7f1d;
+            box-sizing: border-box;
+            border-bottom-right-radius:0.5rem ;
+            border-top-right-radius:0.5rem ;
+            float: left;
+        }
+
+    }
+    .three {
+        img {
+            .full(1.8rem,1.8rem,none);
+            padding: 1.5rem 1.1rem;
+
+        }
+    }
+}
+section{
+    -webkit-box-flex: 1;
+     overflow: auto;
+    &::-webkit-scrollbar{width: 0;}
+     .nav{
+        .full(100%,auto,#ffffff);
+        .box;
+        .left{
+            -webkit-box-flex: 1;
+            ul{
+                .box;
+                li{
+                    -webkit-box-flex: 1;
+                    text-align: center;
+                    padding: 0.5rem 0;
+                }
+                .first{
+                    border-bottom: 1px solid #ff8734;
+                    color: #ff8734;
+                }
+            }
+        }
+        .right{
+            .full(4rem,auto,url(../img/订单状态/pic_27.png) no-repeat left center);
+            background-size: auto 2.5rem;
+            text-align: center;
+            line-height: 4rem;
+            img{
+                .full(1.2rem,auto,null);
+            }
+        }
+    }
+    .main{
+        .full(100%,auto,#ffffff);
+        margin-top: 0.3rem;
+        .num{
+            .full(100%,auto,null);
+            .box;
+            padding: 1rem;
+            box-sizing: border-box;
+            border-bottom: 1px solid #f3f3f3;
+            h3{
+                -webkit-box-flex: 1;
+            }
+            p{
+                color: #ff8734;
+            }
+        }
+        .details{
+            padding: 1rem;
+            box-sizing: border-box;
+            ul{
+                li{
+                    color: #bfbfbf;
+                }
+            }
+        }
+    }
+    
+      .main_1{
+        .full(100%,auto,#ffffff);
+        margin-top: 0.3rem;
+        .num{
+            .full(100%,auto,null);
+            .box;
+            padding: 1rem;
+            box-sizing: border-box;
+            border-bottom: 1px solid #f3f3f3;
+            h3{
+                -webkit-box-flex: 1;
+            }
+            p{
+                color: #ff8734;
+            }
+        }
+        .details{
+            padding: 1rem;
+            box-sizing: border-box;
+            ul{
+                li{
+                    color: #bfbfbf;
+                }
+            }
+        }
+    }
+}
+//footer{
+//  .box;
+//  .full(100%,4.8rem,#ffffff);
+//  border-top: 1px solid #d9d9d9;
+//
+//  dl{
+//      .full(20%,4rem,none);
+//      margin-top:0.3rem ;
+//      text-align: center;
+//      dt{
+//          img{
+//      .full(auto,2.2rem,none);
+//              
+//          }
+//      }
+//      dd{
+//          color: #808080;
+//      }
+//  }
+//}

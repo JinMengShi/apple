@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>粉丝列表</title>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/fans.css" />
+	</head>
+
+	<body>
+		<div class="warp">
+			<header>
+				<a href="index.html"><img src="img/fans_img/fans_03.png" /></a>
+				<h2>粉丝列表(<a>1230</a>)</h2>
+			</header>
+			<section ng-controller="fans">
+				<div class="main1" ng-repeat='x in fans'>
+					<dl>
+						<dt>
+						<img src="{{x.img}}"/></dt>
+						<dd>{{x.username}}</dd>
+					</dl>
+				</div>
+				
+			</section>
+		</div>
+	</body>
+
+</html>

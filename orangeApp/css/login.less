@@ -1,0 +1,101 @@
+@import url(reset.css);
+.box(@ver:horizontal) {
+    display: -webkit-box;
+    -webkit-box-orient: @ver;
+}
+.full(@w, @h, @bg) {
+    width: @w;
+    height: @h;
+    background: @bg;
+}
+.f(@f) {
+    float: @f;
+}
+html {
+    font-size: 62.5%;
+}
+html,
+body,
+.wrap {
+    .full(100%,100%,none);
+}
+.wrap {
+    .box(vertical);
+    .full(none,100%,url(../img/images/a1.png) no-repeat);
+     background-size:100% 100%;
+//  background: url(../img/images/a1.png)no-repeat;
+}
+
+header{
+    text-align: center;
+    img{
+        .full(auto,7rem,0);
+        margin-top: 5.5rem;
+    }
+    h2{
+        font-weight: bold;
+        font-size:1.6rem;
+        margin-top: 1rem;
+        color: #ff7d1b;
+        margin-bottom: 3rem;
+        span{
+            color:#000000;
+        }
+    }
+}
+section{
+    .inputs{
+        padding: 0 2.6rem;
+        margin-top: 1rem;
+        .box;
+        .box;
+        .imgs1{
+            img{
+                .full(2.5rem,auto,0);
+                margin-right: 1rem;
+            }
+        }
+        .imgs2{
+            -webkit-box-flex: 1;
+            .full(auto,2.4rem,0);
+            border: 1px solid #ff7d1b;
+               border-top: none;
+                border-left: none;
+               border-right: none;
+            input{
+                .full(85%,100%,0);
+                outline: none;
+                border: none;
+            }
+            img{
+                .full(auto,1.1rem,0);
+                float: right;
+                margin-top: 0.6rem;
+            }
+        }
+    }
+    .but{
+        .full(93%,2.6rem,0);
+        margin: 2rem 1.2rem;
+        margin-right: 1.2rem;
+        background: #ff7d1b;
+        border-radius: 0.6rem;
+        button{
+            .full(100%,100%,0);
+            outline: none;
+            border: none;
+            font-weight: bold;
+            font-size: 1.4rem;
+            color: #fff;
+        }
+    }
+    .lianjie{
+        .box;
+        padding: 0 1.2rem;
+        color: #507daf;
+        margin-top: -1.2rem;
+        h1{
+            -webkit-box-flex: 1;
+        }
+    }
+}

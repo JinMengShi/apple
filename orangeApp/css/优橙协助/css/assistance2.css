@@ -1,0 +1,191 @@
+@import url('reset.css');
+html,
+body,
+.wrap {
+  width: 100%;
+  height: 100%;
+}
+html {
+  font-size: 62.5%;
+}
+.wrap {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+header {
+  width: 100%;
+  height: 3.5rem;
+  background: #f7f7f7;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  border-bottom: 1px solid #bfbfbf;
+  line-height: 3.5rem;
+  text-align: center;
+}
+header h1 {
+  -webkit-box-flex: 1;
+  text-align: center;
+  font-size: 1.6rem;
+}
+header .left {
+  width: 1.2rem;
+  height: 3.5rem;
+  background: null;
+  margin-left: 1rem;
+}
+header .left img {
+  width: 0.8rem;
+  height: auto;
+  background: null;
+}
+header .right {
+  width: 1.7rem;
+  height: 3.5rem;
+  background: null;
+  margin-right: 1rem;
+}
+header .right img {
+  width: 1.6rem;
+  height: auto;
+  background: null;
+}
+section {
+  -webkit-box-flex: 1;
+  background: #f2f2f2;
+  overflow: auto;
+}
+section::-webkit-scrollbar {
+  width: 0;
+}
+section .statement {
+  width: 100%;
+  height: 1.9rem;
+  background: null;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  color: #333333;
+  line-height: 1.9rem;
+}
+section .statement span {
+  color: #ff7d1b;
+}
+section .arguments {
+  width: 100%;
+  height: 2.9rem;
+  background: #ffffff;
+  padding: 0 1rem;
+  border-bottom: 1px solid #e6e6e6;
+  line-height: 2.9rem;
+  vertical-align: middle;
+}
+section .arguments span {
+  color: #a6a6a6;
+}
+section .arguments b {
+  float: right;
+}
+section .arguments b img {
+  width: 0.7rem;
+  height: auto;
+  background: null;
+}
+section .arguments .txt {
+  border: none;
+  outline: none;
+}
+section .argumentslist {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e6e6e6;
+}
+section .argumentslist span {
+  display: block;
+}
+section .argumentslist .spanleft {
+  width: 5rem;
+  height: auto;
+  background: null;
+}
+section .argumentslist .spanright {
+  -webkit-box-flex: 1;
+  overflow: hidden;
+  word-spacing: normal;
+  text-overflow: ellipsis;
+}
+section .contentimg {
+  width: 100%;
+  height: 11rem;
+  background: #ffffff;
+  padding: 0 1rem;
+}
+section .contentimg p {
+  height: 2rem;
+  color: #333333;
+  line-height: 2rem;
+}
+section .contentimg .imgs {
+  margin-top: 1rem;
+}
+section .contentimg .imgs img {
+  width: 6.8rem;
+  height: auto;
+  background: null;
+  margin-right: 0.5rem;
+}
+section .recipients {
+  width: 100%;
+  height: 4.5rem;
+  background: #ffffff;
+  margin-top: 0.5rem;
+  padding: 0 0.5rem;
+}
+section .recipients ul {
+  padding: 0.8rem 0;
+  float: left;
+}
+section .recipients ul li img {
+  width: 0.9rem;
+  height: auto;
+  background: null;
+  margin-right: 0.3rem;
+}
+section .recipients p {
+  float: right;
+  line-height: 4.5rem;
+}
+section .recipients p img {
+  width: 0.8rem;
+  height: auto;
+  background: null;
+}
+footer {
+  width: 100%;
+  height: 4rem;
+  background: #ffffff;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+footer div {
+  width: 8rem;
+  height: 4rem;
+  background: #ff7d1b;
+  line-height: 4rem;
+  color: #fff;
+  text-align: center;
+  font-size: 1.6rem;
+}
+footer p {
+  -webkit-box-flex: 1;
+  line-height: 4rem;
+  text-align: center;
+  font-size: 1.4rem;
+  color: #6e6e6e;
+}
+footer p span {
+  color: #ff7d1b;
+}

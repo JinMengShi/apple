@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>更多查询（筛选）</title>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/more.css" />
+	</head>
+
+	<body>
+		<div class="wrap">
+			<header>
+				<div class="one" ui-sref="money">
+					<img src="img/images/bind_03.png" />
+				</div>
+				<h1>更多查询</h1>
+				<div class="two">
+					<img src="img/images/bind_05.png" />
+				</div>
+			</header>
+			<section ng-controller="mores">
+				<div class="business">
+					<ul>
+						<li class="on o">
+							<a>全部业务</a>
+							<!--<div></div>-->
+						</li>
+						<li>
+							<a>业务类型
+								<img src="img/fans_img/gengduo_03.jpg" class="i" />
+							</a>
+							<!--<div>
+								<p class="se">购买商品</p>
+								<p>售后退款</p>
+								<p>优橙定制</p>
+								<p>平台充值</p>
+								<p class="n">平台定制
+									<p>
+							</div>-->
+
+						</li>
+
+						<li>
+							<a>业务状态<img src="img/fans_img/gengduo_03.jpg" class="i" /></a>
+
+							<!--<div>
+								<p class="se">购买商品</p>
+								<p>售后退款</p>
+								<p>优橙定制</p>
+								<p>平台充值</p>
+								<p class="n">平台定制
+									<p>
+							</div>-->
+
+						</li>
+						<li>
+							<a>仅看冻结</a>
+							<!--<div></div>-->
+						</li>
+					</ul>
+				</div>
+				<div class="main" ng-repeat='x in mores'>
+					<div class="a">
+						<h3>{{x.money}}</a></h3>
+						<h4>订单编号：{{x.order_id}}</h4></div>
+					<div class="a">
+						<h3>交易时间：{{x.time}}</h3>
+						<h4>{{x.pay_type}}</h4></div>
+				</div>
+
+			</section>
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,65 @@
+@import url(reset.css);
+html {
+  font-size: 62.5%;
+}
+.wrap,
+body,
+html {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+}
+.wrap {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+header {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 100%;
+  height: 4.5rem;
+  background: none;
+  border-bottom: 1px solid #bfbfbf;
+  line-height: 4.5rem;
+}
+header h1 {
+  -webkit-box-flex: 1;
+  text-align: center;
+  font-size: 1.6rem;
+  color: #cecece;
+}
+header img {
+  width: 1rem;
+  height: 1.6rem;
+  background: none;
+  margin-left: 1rem;
+  vertical-align: middle;
+}
+header h2 {
+  margin-right: 1rem;
+  font-size: 1.6rem;
+}
+section {
+  -webkit-box-flex: 1;
+}
+section .main {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 100%;
+  height: 3rem;
+  background: none;
+  border-bottom: 1px solid #f2f2f2;
+}
+section .main h1 {
+  width: 20%;
+  height: 3rem;
+  background: none;
+  -webkit-box-flex: 1;
+  font-size: 1.4rem;
+  line-height: 3rem;
+  margin-left: 1rem;
+}
+section .main input {
+  outline: none;
+  border: none;
+}

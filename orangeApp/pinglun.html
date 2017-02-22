@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/pinglun.css" />
+		<title></title>
+        <script src="js/jquery-3.1.1.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div class="wrap">
+			<header>
+				<a href="index.html"><img src="img/images/a1_06.png" /></a>
+				<h2>评论管理</h2>
+				<a href="#"><img src="img/images/a1_03.png" /></a>
+			</header>
+			<section ng-controller="pingluns">
+				
+				<div class="title">
+         		<ul>
+         			<li class="bgColor">全部类型<img src="img/fans_img/gengduo_03.jpg"/></li>
+         			
+         			<li>评分等级<img src="img/fans_img/gengduo_03.jpg"/></li>
+         			<li>评论时间<img src="img/fans_img/gengduo_03.jpg"/></li>
+         		</ul>
+         	</div>
+
+				<div class="main_main" ng-repeat='x in pinglun'>
+					<div class="main">
+						<h2>3D打印的陶瓷</h2>
+					</div>
+					<div class="main1">
+						<p>订单编号:{{x.number}}<span><img src="img/images/a1_15.png"/></span></p>
+						<p>用户ID:{{x.id}}</p>
+						<p>交易时间:{{x.time}}<label>12:14</label></p>
+						<p>交易时间:{{x.timer}}<label>12:14</label></p>
+						<p>
+							<b>{{x.sex}}</b>
+						</p>
+					</div>
+					<div class="pinglun">
+						<h2></h2>
+						<div class="pinglun1">
+							回复评论
+						</div>
+					</div>
+
+				</div>
+
+				<!--<div class="main">
+				<h2>3D打印的陶瓷</h2>
+			</div>-->
+				<!--<div class="main1">
+				<p>订单编号:DSFSD012389143<span><img src="img/images/a1_15.png"/></span></p>
+				<p>用户ID:顺风耳</p>
+				<p>交易时间:2016-06-01<label>12:14</label></p>
+				<p>交易时间:2016-06-01<label>12:14</label></p>
+				<p>
+					<b>Formlabs发布该产品的原因很简单、直接：目前低端3D打印机都能无法满足职业设计师的质量标准。Formlabs发布该产品的原因很简单、直接:目前低端3D打印机都无法满足职业设计师的质量标准。</b>
+				</p>
+			</div>-->
+			</section>
+			<footer></footer>
+		</div>
+	</body>
+	<script src="js/jquery-3.1.1.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	$(function(){
+		$(".title ul li").click(function(){
+			var index=$(this).index();
+			$(".title ul li").removeClass("bgColor").eq(index).addClass("bgColor");
+			$(".title ul li img").attr({ src: "img/fans_img/gengduo_03.jpg"}).eq(index).attr({ src: "img/fans_img/images/jiantou_03.png"});
+		})
+	})
+</script>
+    <script type="text/javascript">     
+        //兼容火狐、IE8   
+        //显示遮罩层    
+        $(".h1 span").click(function(){
+        	$("#mask").css("height",$(document).height());     
+            $("#mask").css("width",$(document).width());     
+            $("#mask").show();  
+        })
+
+     
+	$(function(){
+		$(".on").click(function(){
+			window.location.href="../index.html";
+		})
+			$(".four").click(function(){
+			window.location.href="wodedianpu.html";
+		})
+	})
+         
+     	$(function(){
+		$(".left img").click(function(){
+			window.location.href="../index.html";
+		})
+			$(".two").click(function(){
+			window.location.href="ycxz.html";
+		})	
+	})    
+    </script>  
+</html>

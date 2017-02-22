@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>消息通知</title>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/message.css" />
+	</head>
+
+	<body>
+		<header>
+			<a href="index.html"><img src="img/message/images/bind_03.png" /></a>
+			<h1>消息通知</h1>
+		</header>
+		<section ng-controller="ones">
+			<div class="main" ng-repeat='x in messages'>
+				<div class="a">
+					<img ng-src="{{x.img}}" />
+
+				</div>
+				<h1>{{x.name}}<p style="color: #c5c5c5;">{{x.names}}</p></h1>
+				<div class="c">
+					<h3>{{x.time}}</h3>
+				</div>
+			</div>
+
+		</section>
+	</body>
+
+</html>

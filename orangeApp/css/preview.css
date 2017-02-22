@@ -1,0 +1,239 @@
+@import url(reset.css);
+html {
+  font-size: 62.5%;
+}
+.wrap,
+body,
+html {
+  width: 100%;
+  height: 100%;
+  background: #f2f2f2;
+}
+.wrap {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+header {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 100%;
+  height: 4.5rem;
+  background: #f7f7f7;
+  border-bottom: 1px solid #bfbfbf;
+  line-height: 4.5rem;
+}
+header h2 {
+  -webkit-box-flex: 1;
+  text-align: center;
+  font-size: 1.8rem;
+}
+header .one img {
+  width: 1rem;
+  height: 1.6rem;
+  background: none;
+  vertical-align: middle;
+  margin-left: 1rem;
+}
+header .two img {
+  width: 1.8rem;
+  height: 1.8rem;
+  background: none;
+  margin-right: 1rem;
+  vertical-align: middle;
+}
+section {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-flex: 1;
+  overflow: auto;
+}
+section::-webkit-scrollbar {
+  width: 0;
+}
+section .main {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  width: 100%;
+  height: 17rem;
+  background: none;
+  background: url("../img/xiaoheizai/b_02.png") no-repeat;
+  background-size: 100% 17rem;
+}
+section .main .main_1 {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 100%;
+  height: 4.5rem;
+  background: none;
+  margin-top: 7rem;
+}
+section .main .main_1 .left {
+  margin-left: 1rem;
+}
+section .main .main_1 .left img {
+  width: 4.5rem;
+  height: 4.5rem;
+  background: none;
+}
+section .main .main_1 .center {
+  -webkit-box-flex: 1;
+  color: white;
+  line-height: 2.2rem;
+  margin-left: 0.5rem;
+  font-size: 1.3rem;
+}
+section .main .main_1 .center h1 a {
+  width: 4.7rem;
+  height: 2rem;
+  background: #ff470b;
+  border-radius: 0.4rem;
+  margin-left: 0.6rem;
+  color: white;
+}
+section .main .main_1 .center h2 img {
+  width: 1.2rem;
+  height: 1.2rem;
+  background: none;
+  vertical-align: middle;
+  margin-left: 0.3rem;
+}
+section .main .main_1 .right img {
+  width: 5rem;
+  height: 2.1rem;
+  background: none;
+  margin-top: 1.9rem;
+  margin-right: 1rem;
+}
+section .main .main_2 {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 100%;
+  height: 5.5rem;
+  background: #cccccc;
+  opacity: 0.7;
+}
+section .main .main_2 .main_2_one {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 100%;
+  height: 5.5rem;
+  background: none;
+  padding: 0.7rem 1rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+section .main .main_2 .main_2_one dl {
+  -webkit-box-flex: 1;
+}
+section .main .main_2 .main_2_one dl dt img {
+  width: 2.1rem;
+  height: 2.1rem;
+  background: none;
+}
+section .main5 {
+  width: 100%;
+  height: auto;
+  background: none;
+  margin-top: 0.5rem;
+}
+section .main5 img {
+  width: 100%;
+  height: auto;
+  background: none;
+}
+section .main6 {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 100%;
+  height: 25rem;
+  background: none;
+}
+section .main6 .main6_one {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 100%;
+  height: 25rem;
+  background: none;
+  padding: 0.5rem 1rem;
+  box-sizing: border-box;
+}
+section .main6 .main6_one .main6_left {
+  width: 49%;
+  height: auto;
+  background: none;
+  margin-right: 0.5rem;
+}
+section .main6 .main6_one .main6_left dl {
+  width: 100%;
+  height: auto;
+  background: none;
+}
+section .main6 .main6_one .main6_left dl dt img {
+  width: 100%;
+  height: auto;
+  background: none;
+}
+section .main6 .main6_one .main6_left dl dd p {
+  color: #262626;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+section .main6 .main6_one .main6_left dl dd h6 {
+  font-size: 1.4rem;
+  color: #ff7f1c;
+}
+section .main6 .main6_one .main6_left dl dd h6 a {
+  color: #a5a5a5;
+  font-size: 1.2rem;
+}
+section .main6 .main6_one .main6_right {
+  width: 49%;
+  height: auto;
+  background: none;
+  box-sizing: border-box;
+}
+section .main6 .main6_one .main6_right dl {
+  width: 100%;
+  height: auto;
+  background: none;
+}
+section .main6 .main6_one .main6_right dl dt img {
+  width: 100%;
+  height: auto;
+  background: none;
+}
+section .main6 .main6_one .main6_right dl dd p {
+  color: #262626;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+section .main6 .main6_one .main6_right dl dd h6 {
+  font-size: 1.4rem;
+  color: #ff7f1c;
+}
+section .main6 .main6_one .main6_right dl dd h6 a {
+  color: #a5a5a5;
+  font-size: 1.2rem;
+}
+footer {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 100%;
+  height: 4.8rem;
+  background: #f7f7f7;
+  border-top: 1px solid #BFBFBF;
+  padding: 0.9rem 1rem;
+  box-sizing: border-box;
+}
+footer .a {
+  width: 33.3%;
+  height: 3rem;
+  background: none;
+  border-right: 1px solid #BFBFBF;
+  line-height: 3rem;
+  font-size: 1.6rem;
+  text-align: center;
+  color: #333333;
+}

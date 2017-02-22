@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>优橙钱包</title>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/money.css" />
+	</head>
+
+	<body>
+		<div class="wrap">
+			<header>
+				<div class="one">
+					<a href="index.html"><img src="img/images/images/money_06.png" /></a>
+				</div>
+				<h1>优橙钱包</h1>
+				<div class="two">
+					<img src="img/images/images/money_03.png" />
+				</div>
+			</header>
+			<section ng-controller="money">
+				<div class="more" ui-sref="more">
+					<a href="">更多查询</a>
+				</div>
+				<div class="two">
+					<h2>账户余额（元）</h2>
+				</div>
+				<div class="three">
+					<h3>536.00</h3>
+					<h4>(冻结金额：230.00)</h4>
+					<h5>申请但未完成的提现金额被冻结，详情请点击<a href="" style="color: #ff7f1d;">"分类查询"</a></h5>
+				</div>
+				<div class="four">
+					<div class="fo" ui-sref="chongzhi">
+						<a href="">充值</a>
+					</div>
+					<div class="ur" ui-sref="tixian">
+						<a href="">提现</a>
+					</div>
+				</div>
+				<div class="main_2">
+					<div class="a">
+						<img src="img/images/images/moneya_03.png" />
+					</div>
+					<h2>修改支付宝账号</h2>
+					<div class="b">
+						<img src="img/images/images/moneya_05.png" />
+					</div>
+				</div>
+				<div class="main_1" ui-sref="yewu">
+					<h2>现金流明细</h2>
+				</div>
+
+				<div class="main_9" ng-repeat='x in money'>
+					<div class="a">
+						<h3>{{x.money}}</a></h3>
+						<h4>订单编号：{{x.order_id}}</h4></div>
+					<div class="a">
+						<h3>交易时间：{{x.time}}</h3>
+						<h4>{{x.pay_type}}</h4></div>
+				</div>
+
+			</section>
+		</div>
+	</body>
+
+</html>

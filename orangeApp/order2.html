@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>订单状态</title>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/order2.css" />
+	</head>
+
+	<body>
+		<div class="wrap" ui-view='content'>
+			<header>
+				<div class="one" ui-sref="index">
+					<img src="img/订单状态/pic_28.png" /></a>
+				</div>
+				<div class="two">
+					<div>
+						<div class="two_1">
+							商品订单
+						</div>
+						<div class="two_2">
+							优橙订单
+						</div>
+					</div>
+
+				</div>
+				<div class="three">
+					<img src="img/订单状态/pic_31.png" />
+				</div>
+			</header>
+			<section ng-controller="siteCtrl">
+				<div class="nav">
+					<div class="left">
+						<ul>
+							<li class="first">
+								<dl>
+									<dt>81</dt>
+									<dd>全部</dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt>12</dt>
+									<dd>未付款</dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt>23</dt>
+									<dd>待发货</dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt>12</dt>
+									<dd>待收货</dd>
+								</dl>
+							</li>
+						</ul>
+					</div>
+					<div class="right">
+						<img src="img/订单状态/pic_32.png" />
+					</div>
+				</div>
+
+				<div class="main_1" ng-repeat='x in ordertwo'>
+					<div class="num">
+						<h3>订单编号：<span>{{x.order_id}}</span></h3>
+						<p>{{x.pay_type}}</p>
+					</div>
+					<div class="details">
+						<ul>
+							<li>总价：{{x.money}}</li>
+							<li>交易时间：{{x.time}}</li>
+
+						</ul>
+					</div>
+				</div>
+
+		</div>
+		</section>
+
+		</div>
+	</body>
+
+</html>

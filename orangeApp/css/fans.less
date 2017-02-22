@@ -1,0 +1,64 @@
+@import url(reset.css);
+.box(@ver:horizontal) {
+    display: -webkit-box;
+    -webkit-box-orient: @ver;
+}
+.full(@w, @h, @bg) {
+    width: @w;
+    height: @h;
+    background: @bg;
+}
+html {
+    font-size: 62.5%;
+}
+.wrap,
+body,
+html {
+    .full(100%,100%,#f2f2f2);
+}
+.wrap {
+    .box(vertical);
+}
+header{
+    .box;
+    .full(100%,4rem,#f7f7f7);
+     line-height: 4rem;
+     border-bottom: 1px solid #bfbfbf;
+    img{
+       .full(auto,1.5rem,none);
+       padding-left: 1rem;
+       padding-top: 1.2rem;
+       
+    }
+    h2{
+        -webkit-box-flex: 1;
+        font-size: 1.5rem;
+        text-align: center;
+           
+    }
+}
+section{
+    
+   .box(vertical);
+   .main1{
+       .box;
+       .full(100%,5rem,#ffffff);
+       margin-top: 0.5rem;
+       dl{
+           .box;
+           img{
+               .full(auto,4rem,none);
+               padding-left: 1rem;
+               padding-top:0.5rem;
+           }
+           dd{
+               font-size: 1.5rem;
+               line-height: 5rem;
+               padding-left: 1rem;
+           }
+       }
+   }
+}
+
+
+

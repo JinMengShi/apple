@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/yewu.css"/>
+	</head>
+	<body>
+		<div class="wrap">
+			<header>
+				<div class="one">
+					<a ui-sref="money" href="#"><img src="img/images/bind_03.png"/></a>
+				</div>
+				<h1>业务明细</h1>
+				<div class="two">
+					<img src="img/images/bind_05.png"/>
+				</div>
+			</header>
+			<section ng-controller="yewus">
+				<div class="main">
+					<h3>账户金额变动</h3>
+					<h4>￥0(冻结金额变动：￥0.00)</h4>
+				</div>
+				<div class="main_1" ng-repeat='x in yewus'>
+					<div class="a">
+						<h3>{{x.name}}</h3>
+					    <h4>{{x.table}}</h4></div>
+					
+			</section>
+		</div>
+	</body>
+</html>

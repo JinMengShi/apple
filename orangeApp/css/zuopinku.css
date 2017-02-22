@@ -1,0 +1,109 @@
+@import url(reset.css);
+html {
+  font-size: 62.5%;
+}
+.wrap,
+body,
+html {
+  width: 100%;
+  height: 100%;
+  background: #f2f2f2;
+}
+.wrap {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+header {
+  width: 100%;
+  height: 4rem;
+  background: #f7f7f7;
+  border-bottom: 1px solid #bfbfbf;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  line-height: 4rem;
+}
+header img {
+  width: auto;
+  height: 1.6rem;
+  background: none;
+  margin-left: 1rem;
+  vertical-align: middle;
+}
+header h2 {
+  text-align: center;
+  -webkit-box-flex: 1;
+  font-size: 1.5rem;
+}
+section {
+  background: #f2f2f2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+section .myproduction_main {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 100%;
+  height: 4rem;
+  background: #ffffff;
+  border-bottom: 1px solid #bfbfbf;
+  line-height: 4rem;
+}
+section .myproduction_main h2 {
+  font-size: 1.3rem;
+  -webkit-box-flex: 1;
+  margin-left: 1rem;
+}
+section .myproduction_main img {
+  width: auto;
+  height: 1.7rem;
+  background: none;
+  margin-right: 1rem;
+}
+section .myproduction_main1 {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 100%;
+  height: 4rem;
+  background: #ffffff;
+  line-height: 4rem;
+}
+section .myproduction_main1 h2 {
+  font-size: 1.3rem;
+  -webkit-box-flex: 1;
+  margin-left: 1rem;
+}
+section .myproduction_main1 img {
+  width: auto;
+  height: 1.7rem;
+  background: none;
+  margin-right: 1rem;
+}
+section .myproduction_main2 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  width: 100%;
+  height: 8rem;
+  background: #f2f2f2;
+  margin-top: 1.9rem;
+  color: #999999;
+}
+section .myproduction_main2 h2 {
+  margin-left: 1rem;
+}
+section .myproduction_main2 p {
+  margin-left: 1rem;
+  width: 95%;
+  line-height: 1.7rem;
+  margin-top: 0.5rem;
+}
+section .btn {
+  width: 92%;
+  height: 3rem;
+  background: #ff7f1d;
+  color: white;
+  margin-top: 2rem;
+  margin-left: 1rem;
+  text-align: center;
+  line-height: 3rem;
+  border-radius: 1rem;
+}
